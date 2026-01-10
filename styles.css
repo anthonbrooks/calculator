@@ -33,18 +33,18 @@ button {
     height: 100px;
     border-radius: 50%;
     border: none;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: hsl(0, 0%, 20%);
     color: white;
     font-size: 3rem;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, .15);
+    background-color: hsl(0, 0%, 30%);
 }
 
 button:active {
-    background-color: rgba(0, 0, 0, .05);
+    background-color: hsl(0, 0%, 40%);
 }
 
 .operator-btn {
