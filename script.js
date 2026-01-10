@@ -8,10 +8,12 @@ let equals = document.querySelector('#evaluate');
 let decimal = document.querySelector('#decimal');
 
 // variable for all buttons
-let button = document.querySelectorAll('button');
+let buttons = document.querySelectorAll('button');
 
 // create variables for display
 let display = document.querySelector('#display');
+
+let currentValue = '';
 
 // update display
 function appendDisplay(value) {
@@ -21,6 +23,20 @@ function appendDisplay(value) {
 function clearScreen() {
     display.value = '';
 }
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const value = button.textContent;
+
+        if (value === 'AC') {
+            currentValue = '';
+        } else {
+            currentValue += value;
+        }
+
+        display.value = currentValue;
+    });
+});
 
 // add two numbers
 const add = (x, y) => x + y;
