@@ -1,15 +1,17 @@
-function add(x, y) {
-    return x + y;
-}
+// add two numbers
+const add = (x, y) => x + y;
 
-function subtract(x, y) {
-    return x - y;
-}
+// subtract two numbers
+const subtract = (x, y) => x - y;
 
-function multiply(x, y) {
-    return x * y;
-}
+// multiply two numbers
+const multiply = (x, y) => x * y;
 
+// divide two numbers
 function divide(x, y) {
-    return x / y;
+    if (y === 0) {
+        return 'ERROR';
+    } else {
+        return x / y;
+    }
 }
