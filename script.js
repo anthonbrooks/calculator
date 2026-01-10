@@ -18,6 +18,10 @@ function appendDisplay(value) {
     display.value += value;
 }
 
+function clearScreen() {
+    display.value = '';
+}
+
 // add two numbers
 const add = (x, y) => x + y;
 
@@ -35,3 +39,12 @@ function divide(x, y) {
         return x / y;
     }
 }
+
+function operate(operator, x, y) {
+
+}
+
+// handle button clicks
+// button.addEventListener('click', function() {
+//     appendDisplay(button);
+// });
