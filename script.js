@@ -7,6 +7,14 @@ let percent = document.querySelector("#percent");
 let equals = document.querySelector("#evaluate");
 let decimal = document.querySelector("#decimal");
 
+// create variables for display
+let display = document.querySelector("#display");
+
+// update display
+function appendDisplay() {
+    display.value += value;
+}
+
 // add two numbers
 const add = (x, y) => x + y;
 
