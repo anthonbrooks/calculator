@@ -13,7 +13,11 @@ let buttons = document.querySelectorAll('button');
 // create variables for display
 let display = document.querySelector('#display');
 
+// variables for the buttons clicked
 let currentValue = '';
+let num1 = '';
+let num2 = '';
+let operator = null;
 
 // update display
 function appendDisplay(value) {
@@ -30,6 +34,8 @@ buttons.forEach((button) => {
 
         if (value === 'AC') {
             currentValue = '';
+        } else if (value === '+/-') {
+            -currentValue;
         } else {
             currentValue += value;
         }
@@ -57,7 +63,15 @@ function divide(x, y) {
 }
 
 function operate(operator, x, y) {
+    x = +x;
+    y = +y;
 
+    switch (operator) {
+        case '+': return add(x, y);
+        case '-': return subtract(x, y);
+        case '*': return multiply(x, y);
+        case '/': return divide(x, y);
+    }
 }
 
 // handle button clicks
