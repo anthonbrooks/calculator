@@ -1,17 +1,20 @@
 // create variables for calculator buttons
-let numbers = document.querySelectorAll(".numbers");
-let operators = document.querySelectorAll(".operator");
-let clear = document.querySelector("#clear");
-let negative = document.querySelector("#negative");
-let percent = document.querySelector("#percent");
-let equals = document.querySelector("#evaluate");
-let decimal = document.querySelector("#decimal");
+let numbers = document.querySelectorAll('.numbers');
+let operators = document.querySelectorAll('.operator');
+let clear = document.querySelector('#clear');
+let negative = document.querySelector('#negative');
+let percent = document.querySelector('#percent');
+let equals = document.querySelector('#evaluate');
+let decimal = document.querySelector('#decimal');
+
+// variable for all buttons
+let button = document.querySelectorAll('button');
 
 // create variables for display
-let display = document.querySelector("#display");
+let display = document.querySelector('#display');
 
 // update display
-function appendDisplay() {
+function appendDisplay(value) {
     display.value += value;
 }
 
