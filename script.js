@@ -32,12 +32,23 @@ buttons.forEach((button) => {
     button.addEventListener('click', () => {
         const value = button.textContent;
 
-        if (value === 'AC') {
+        if (button.id === 'clear') {
             currentValue = '';
+            num1 = '';
+            num2 = '';
+            operator = null;
         } else if (value === '+/-') {
-            -currentValue;
+            // -(+currentValue);
+        } else if (button.classList.contains('operator')) {
+            num1 = currentValue;
+            operator = button.textContent;
+            currentValue = '';
+        } else if (button.id === 'evaluate') {
+            num2 = currentValue;
+            operate(operator, num1, num2);
+            operator = null;
         } else {
-            currentValue += value;
+            currentValue += button.textContent;
         }
 
         display.value = currentValue;
@@ -73,8 +84,3 @@ function operate(operator, x, y) {
         case '/': return divide(x, y);
     }
 }
-
-// handle button clicks
-// button.addEventListener('click', function() {
-//     appendDisplay(button);
-// });
