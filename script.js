@@ -28,8 +28,12 @@ buttons.forEach((button) => {
             num1 = '';
             num2 = '';
             operator = null;
-        } else if (value === '+/-') {
-            // -(+currentValue);
+        } else if (button.id === 'negative') {
+            currentValue = Number(currentValue);
+            currentValue = -currentValue;
+            currentValue = String(currentValue);
+        } else if (button.id === 'percent') {
+            currentValue = currentValue / 100;
         } else if (button.classList.contains('operator')) {
             num1 = currentValue;
             operator = button.textContent;
