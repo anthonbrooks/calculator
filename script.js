@@ -19,15 +19,6 @@ let num1 = '';
 let num2 = '';
 let operator = null;
 
-// update display
-function appendDisplay(value) {
-    display.value += value;
-}
-
-function clearScreen() {
-    display.value = '';
-}
-
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         const value = button.textContent;
@@ -45,7 +36,7 @@ buttons.forEach((button) => {
             currentValue = '';
         } else if (button.id === 'evaluate') {
             num2 = currentValue;
-            operate(operator, num1, num2);
+            currentValue = operate(operator, num1, num2);
             operator = null;
         } else {
             currentValue += button.textContent;
@@ -80,7 +71,7 @@ function operate(operator, x, y) {
     switch (operator) {
         case '+': return add(x, y);
         case '-': return subtract(x, y);
-        case '*': return multiply(x, y);
+        case 'x': return multiply(x, y);
         case '/': return divide(x, y);
     }
 }
