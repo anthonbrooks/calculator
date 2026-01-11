@@ -47,14 +47,14 @@ button:active {
     background-color: hsl(0, 0%, 40%);
 }
 
-.operator {
+.operator, .orange {
     background-color: hsl(39, 100%, 55%);
 }
 
-.operator:hover {
+.operator:hover, .orange:hover {
     background-color: hsl(39, 100%, 65%);
 }
 
-.operator:active {
+.operator:active, .orange:active {
     background-color: hsl(39, 100%, 75%);
 }
