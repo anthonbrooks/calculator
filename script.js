@@ -40,8 +40,12 @@ buttons.forEach((button) => {
             currentValue = '';
         } else if (button.id === 'evaluate') {
             num2 = currentValue;
-            currentValue = operate(operator, num1, num2);
-            operator = null;
+            if (num2) {
+                currentValue = operate(operator, num1, num2);
+                operator = null;
+            } else {
+                display.value = currentValue;
+            }
         } else {
             currentValue += button.textContent;
         }
