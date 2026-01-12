@@ -65,10 +65,3 @@ button:active {
 .top-btns {
     background-color: hsl(0, 0%, 50%);
 }
-
-/* @media (max-width: 400px) {
-    button {
-        width: 22%;
-        height: 1.5em;
-    }
-} */
