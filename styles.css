@@ -16,7 +16,7 @@ body {
 }
 
 #display {
-    width: 100%;
+    width: 100vw;
     font-size: 7rem;
     text-align: end;
     border: none;
