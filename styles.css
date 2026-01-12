@@ -29,14 +29,15 @@ body {
 }
 
 button {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
     font-size: 3rem;
     cursor: pointer;
+    margin: 0.25rem;
 }
 
 button:hover {
@@ -63,8 +64,9 @@ button:active {
     background-color: hsl(0, 0%, 50%);
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     button {
-        color: green;
+        width: 22%;
+        height: 1.5em;
     }
-}
+} */
