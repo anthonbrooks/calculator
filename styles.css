@@ -58,3 +58,13 @@ button:active {
 .operator:active, .orange:active {
     background-color: hsl(39, 100%, 75%);
 }
+
+.top-btns {
+    background-color: hsl(0, 0%, 50%);
+}
+
+@media (max-width: 400px) {
+    button {
+        color: green;
+    }
+}
