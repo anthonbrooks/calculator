@@ -46,6 +46,8 @@ buttons.forEach((button) => {
             } else {
                 display.value = currentValue;
             }
+        } else if (button.textContent == 'del') {
+            currentValue.slice(0, -1);
         } else {
             currentValue += button.textContent;
         }
@@ -83,3 +85,13 @@ function operate(operator, x, y) {
         case '/': return divide(x, y);
     }
 }
+
+numbers.forEach((number) => {
+    number.addEventListener('click', () => {
+        if (currentValue) {
+            clear.textContent = 'del';
+        } else {
+            clear.textContent = 'AC';
+        }
+    });
+});
