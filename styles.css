@@ -9,7 +9,7 @@ body {
 
 #container {
     max-width: 375px;
-    height: 570px;
+    height: auto;
     background-color: rgba(0, 0, 0, .9);
     border-radius: 25px;
     overflow: hidden;
@@ -68,4 +68,12 @@ button:active {
 
 .bottom-btns {
     
+}
+
+@media (max-width: 374px) {
+    button {
+        width: 70px;
+        height: 70px;
+        margin: 0.17rem;
+    }
 }
