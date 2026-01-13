@@ -23,7 +23,7 @@ body {
     background-color: rgba(0, 0, 0, .9);
     color: white;
     box-sizing: border-box;
-    padding-right: 32px;
+    padding-right: 24px;
 }
 
 .keys {
@@ -64,4 +64,8 @@ button:active {
 
 .top-btns {
     background-color: hsl(0, 0%, 50%);
+}
+
+.bottom-btns {
+    
 }
