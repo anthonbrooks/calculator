@@ -8,8 +8,8 @@ body {
 }
 
 #container {
-    max-width: 450px;
-    height: 650px;
+    max-width: 375px;
+    height: 570px;
     background-color: rgba(0, 0, 0, .9);
     border-radius: 25px;
     overflow: hidden;
