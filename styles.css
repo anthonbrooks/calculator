@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-    max-width: 375px;
+    max-width: 354px;
     height: auto;
     background-color: rgba(0, 0, 0, .9);
     border-radius: 25px;
@@ -31,15 +31,15 @@ body {
 }
 
 button {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
     font-size: 2rem;
     cursor: pointer;
-    margin: 0.25rem;
+    margin: 0.17rem;
 }
 
 button:hover {
@@ -64,16 +64,4 @@ button:active {
 
 .top-btns {
     background-color: hsl(0, 0%, 50%);
-}
-
-.bottom-btns {
-    
-}
-
-@media (max-width: 374px) {
-    button {
-        width: 70px;
-        height: 70px;
-        margin: 0.17rem;
-    }
 }
