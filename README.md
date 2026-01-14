@@ -4,7 +4,7 @@ This project is a calculator that I built as a part of the Odin Project Curricul
 
 **Link to project:** https://anthonbrooks.github.io/calculator/
 
-![Project Screenshot](images/demo.png)
+![Project Screenshot](images/calculator-screenshot.png)
 
 ## How It's Made:
 
