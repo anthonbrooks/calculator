@@ -1,67 +1,75 @@
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, .15);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 #container {
-    max-width: 354px;
-    height: auto;
-    background-color: rgba(0, 0, 0, .9);
-    border-radius: 25px;
-    overflow: hidden;
+  max-width: 354px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 #display {
-    width: 100%;
-    font-size: 7rem;
-    text-align: end;
-    border: none;
-    background-color: rgba(0, 0, 0, .9);
-    color: white;
-    box-sizing: border-box;
-    padding-right: 24px;
+  width: 100%;
+  font-size: 7rem;
+  text-align: end;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  box-sizing: border-box;
+  padding-right: 24px;
 }
 
 .keys {
-    padding: 15px;
+  padding: 15px;
+}
+
+.zero {
+  width: 150px;
+  border-radius: 25px;
 }
 
 button {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: none;
-    background-color: hsl(0, 0%, 20%);
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    margin: 0.17rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 0.17rem;
 }
 
 button:hover {
-    background-color: hsl(0, 0%, 30%);
+  background-color: hsl(0, 0%, 30%);
 }
 
 button:active {
-    background-color: hsl(0, 0%, 40%);
+  background-color: hsl(0, 0%, 40%);
 }
 
-.operator, .orange {
-    background-color: hsl(39, 100%, 55%);
+.operator,
+.orange {
+  background-color: hsl(39, 100%, 55%);
 }
 
-.operator:hover, .orange:hover {
-    background-color: hsl(39, 100%, 65%);
+.operator:hover,
+.orange:hover {
+  background-color: hsl(39, 100%, 65%);
 }
 
-.operator:active, .orange:active {
-    background-color: hsl(39, 100%, 75%);
+.operator:active,
+.orange:active {
+  background-color: hsl(39, 100%, 75%);
 }
 
 .top-btns {
-    background-color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 50%);
 }
